@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Slideshow Apolo</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+
+
+    <header class="header">
+        <img src="https://i.ibb.co/tTSYWFd7/logo-Apolo-1-1.png" alt="Logo Apolo">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </header>
+
+    <nav id="menu" class="menu" style="display: none;">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#quienes-somos">Quiénes Somos</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#cotizaciones">Cotizaciones</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="slideshow">
+        <img src="https://images.pexels.com/photos/63763/pexels-photo-63763.jpeg?cs=srgb&dl=carro-deportivo-coche-coche-de-lujo-63763.jpg&fm=jpg"
+            class="slide" style="display:block;">
+        <img src="https://th.bing.com/th/id/R.8b007d2e4f489dd3bb8f463233c274b5?rik=OEE1WFfm043XSw&riu=http%3a%2f%2f1.bp.blogspot.com%2f-GZ5YHXtpsd8%2fUaqdTa8GqGI%2fAAAAAAAACeY%2fE6SJzzRaEWY%2fs1600%2frandolimagenes.blogspot%2b%25252858%252529.jpg&ehk=WzKlVaq%2fEmxjKvOWybmIknX4uq2pXBZmG%2f4ZlcdW114%3d&risl=&pid=ImgRaw&r=0"
+            class="slide">
+        <img src="https://th.bing.com/th/id/R.1e5d812e38b777841491ccf47f188ed2?rik=6BHHuBb1MCoKvw&riu=http%3a%2f%2f3.bp.blogspot.com%2f-u_zYPP8Q850%2fUlX85ztgtjI%2fAAAAAAAA7BI%2fSveqY9rvsSI%2fs00%2fMcLaren-P1-Carros-Deportivos-1920x1080.jpg&ehk=uwp%2fmtqT8HLYTB%2frHbswWWgFSHnIFw5DqWpTQutX7RE%3d&risl=&pid=ImgRaw&r=0"
+            class="slide">
+    </div>
+
+
+
+    <script>
+        let slideIndex = 0;
+        function showSlides() {
+            const slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) slideIndex = 1;
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000);
+        }
+
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            // Cambiar el estilo de display entre 'none' y 'block'
+            menu.style.display = menu.style.display === "block" ? "none" : "block";
+        }
+
+        window.onload = showSlides;
+    </script>
+
+    <div class="card">
+        <img src="https://img.freepik.com/vector-premium/plantilla-diseno-vector-logotipo-icono-oficina-trabajo_827767-2688.jpg"
+            alt="Logo carro" class="logo">
+        <h2>Apolo Taxi</h2>
+        <p>Servicio de transporte privado.</p>
+        <h3>Tel.</h3>
+        <a href="tel:809-810-1429"> 809-810-1419</a>
+    </div>
+
+    <div class="card">
+        <img src="https://st2.depositphotos.com/3254189/6336/v/450/depositphotos_63360319-stock-illustration-business-man-vector-icon-symbol.jpg"
+            alt="Logo oficina" class="logo">
+        <h2>Apolo Ejecutivo</h2>
+        <p>Viajes lujosos que brindan status y seguridad al desplazarte.</p>
+        <h3>Tel.</h3>
+        <a href="tel:809-537-1245">809-537-1245</a>
+    </div>
+
+
+    <div class="card">
+        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/delivery-truck-design-template-e31a5cad5b37024064f40cb2ab587527_screen.jpg?ts=1626780313"
+            alt="Logo camion" class="logo">
+        <h2>Apolo cargo</h2>
+        <p>Tu mudanza, nuestra responsabilidad.</p>
+        <h3>Web</h3>
+        <a href="http://apolotaxi.com/assets/images/vectorOne.svg">Apolocarga.com</a>
+        <h3>Tel.</h3>
+        <a href="tel:809-537-8888">809-537-8888</a>
+
+    </div>
+
+    <div class="card">
+        <img src="https://img.freepik.com/premium-vector/valet-parking-icon_1134231-32708.jpg" alt="Logo vale parkin"
+            class="logo">
+        <h2>Apolo Valet Parking</h2>
+        <p>Resolvemos los problemas causados por la falta de estacionamientos en tu negocio.</p>
+        <h3>Tel.</h3>
+        <a href="tel:809-537-1245">809-537-1245</a>
+
+    </div>
+
+    <div class="cards-container">
+    <div class="card">
+        <img src="https://s.tmimgcdn.com/scr/1200x627/309800/coche-volante-logo-ilustracion-vector-v5_309892-original.jpg"
+            alt="logo volante" class="Logo" height="100 px">
+        <h1>Apolo Zona Oriental</h1>
+        <p> Servicio de transporte privado.</p>
+        <h3>Tel.</h3>
+        <a href="tel:809-591-8888">809-591-8888</a>
+
+
+    </div>
+
+    <div class="card">
+        <img src="https://i.fbcd.co/products/resized/resized-750-500/to2735-1-5eed45ad2b5e0c0c29d8bc11358c191306f4fbca3fef0825bcbfd37bcfc5aef0.jpg"
+            alt="Logo de grua" class="Logo" height="100 px">
+        <h1>Apolo Rescate</h1>
+        <p> Desde un cambio de neumatico hasta gruas, asegurando la continuidad de tu viaje.</p>
+        <h3>Tel.</h3>
+        <a href="tel: 809-537-0911">809-537-0911</a>
+
+
+    </div>
+
+
+    <div class="card">
+        <img src="https://th.bing.com/th/id/OIP.rnepph-rUxMoNEswcG0d-QHaHa?cb=iwc2&rs=1&pid=ImgDetMain"
+            alt="Logo limosina" class="logo" height="100 px">
+        <h1>Apolo limosinas</h1>
+        <p>Disponemos de unidades con capacidad para 6, 8 y 10 pasajeros, modelos Lincoln Town Car.</p>
+        <h3>Tel.</h3>
+        <a href="tel:809-537-1245">809-537-1245</a>
+
+
+    </div>
+
+    <div class="card">
+        <img src="https://i.pinimg.com/originals/29/2e/6d/292e6d90459769aadbe5d96f0eb2e4a6.jpg" alt="Logo moto"
+            class="logo" height="100 px">
+        <h1>Apolo Moto</h1>
+        <p> Traslados o encomiendas en moto.</p>
+        <h3>Tel.</h3>
+        <a href="tel:809-537-4444">809-537-4444</a>
+
+    </div>
+
+    </div>
+
+
+    <section id="cotizaciones">
+        <div class="form-container">
+            <h2>Cotizaciones</h2>
+            <form>
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="servicio">Selecciona tu servicio:</label>
+                <select id="servicio" name="servicio" required>
+                    <option value="">-- Elige un servicio --</option>
+                    <option value="Apolo Taxi">Apolo Taxi</option>
+                    <option value="Apolo Ejecutivo">Apolo Ejecutivo</option>
+                    <option value="Apolo Carga">Apolo Carga</option>
+                    <option value="Apolo Valet Parking">Apolo Valet Parking</option>
+                    <option value="Apolo Zona Oriental">Apolo Zona Oriental</option>
+                    <option value="Apolo Rescate">Apolo Rescate</option>
+                    <option value="Apolo Limosinas">Apolo Limosinas</option>
+                    <option value="Apolo Moto">Apolo Moto</option>
+                </select>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="quienes-somos" class="quienes-somos">
+        <div class="contenido">
+            <div class="texto">
+                <h1>¿Quiénes somos?</h1>
+                <p>
+                    Somos una empresa familiar que, desde su fundación en 1975, se ha ganado el reconocimiento de los
+                    dominicanos por la excelencia en el servicio de transporte privado de pasajeros, soporte de
+                    asistencia vial,
+                    mudanzas, acarreo, valet parking, encomiendas y transporte en motocicletas.
+                </p>
+            </div>
+
+            <img src="https://img.freepik.com/fotos-premium/feliz-2-jovenes-amigos-conductor-sonriendo-mientras-sentado-automovil-ventana-delantera-abierta-hombre-mujer-asiaticos-chreful-traves-ventana-pareja-joven-conduciendo-automovil-viajar-vacaciones_109959-94.jpg"
+                alt="Imagen sonriendo" class="imagen" height="300">
+
+            <!-- Aquí va el mini-footer interno -->
+            <div class="mini-footer">
+                <div class="item">
+                    <img src="https://i.ibb.co/tTSYWFd7/logo-Apolo-1-1.png" alt="Logo Apolo" class="icono-footer"
+                        height="70px">
+                </div>
+                <div class="item">
+                    <img src="https://static.vecteezy.com/system/resources/previews/000/582/047/original/telephone-symbol-icon-vector-illustration.jpg"
+                        style="height: 50px;" alt="telefono" class="logo" <span>809-810-1429</span>
+                </div>
+
+                <div class="item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Ubicación"
+                        class="icono-footer" height="50px">
+                    <span>Santo Domingo, República Dominicana</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

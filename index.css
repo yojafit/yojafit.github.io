@@ -1,0 +1,271 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #111;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-toggle {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.menu {
+  background-color: #111;
+  position: absolute;
+  right: 20px;
+  top: 60px;
+  width: 200px;
+  display: none;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  border-bottom: 1px solid #333;
+}
+
+.menu a {
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+
+.menu a:hover {
+  background-color: #333;
+}
+
+/* Slideshow */
+.slideshow {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slideshow img {
+    height: 500px;
+
+}
+
+.slide {
+  width: 100%;
+  display: none;
+  transition: opacity 1s ease-in-out;
+}
+/* Estilo del card */
+.card {
+  max-width: 320px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  margin: 20px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo para el logo dentro del card */
+.card .logo {
+  max-height: 80px;
+  margin-bottom: 20px;
+}
+
+/* Título del card */
+.card h2 {
+  font-size: 1.8rem;
+  color: #c10000; /* Rojo Apolo */
+  margin-bottom: 10px;
+}
+
+/* Subtítulo o etiqueta Tel. */
+.card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+/* Descripción del servicio */
+.card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Estilo para el enlace del teléfono */
+.card a[href^="tel:"] {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #d40000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.card a[href^="tel:"]:hover {
+  background-color: #c10000;
+}
+/* Contenedor principal del formulario */
+#cotizaciones {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Caja blanca con sombra */
+.form-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Título gris */
+.form-container h2 {
+  text-align: center;
+  color: #555;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+/* Estilo de etiquetas */
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Inputs y select rojos */
+.form-container input,
+.form-container select,
+.form-container textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #d40000;
+  border-radius: 6px;
+  background-color: #ffeaea;
+  font-size: 16px;
+  color: #222;
+}
+
+/* Botón */
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #d40000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #a80000;
+}
+
+
+.quienes-somos {
+  background-color: #111; /* Fondo negro */
+  color: #fff; /* Texto blanco */
+  padding: 40px 20px;
+}
+
+.quienes-somos .contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap; /* Para que en móviles se acomode verticalmente */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.quienes-somos .texto {
+  flex: 1;
+  min-width: 300px;
+}
+
+.quienes-somos .texto h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.quienes-somos .texto p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.quienes-somos .imagen {
+  flex: 1;
+  max-width: 100%;
+  height:fit-content;
+  border-radius: 90px;
+}
+
+.footer-con-imagen {
+  background-image: url('https://tu-imagen-de-fondo.jpg'); /* Coloca aquí tu imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  padding: 40px 20px;
+  color: white;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* oscurece la imagen para que el texto sea legible */
+  padding: 20px;
+}
+
+.mini-footer {
+  margin-top: 30px;
+  background-color: #111;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-end; /* Alinea todos los elementos a la derecha */
+  gap: 20px; /* Espaciado entre los elementos */
+  align-items: center;
+}
+
+.mini-footer .item {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+}
+
+.icono-footer {
+  width: 100px;
+  height: 24px;
+}
+
